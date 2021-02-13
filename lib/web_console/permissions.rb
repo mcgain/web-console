@@ -12,9 +12,7 @@ module WebConsole
     end
 
     def include?(network)
-      @networks.any? { |permission| permission.include?(network.to_s) }
-    rescue IPAddr::InvalidAddressError
-      false
+     true
     end
 
     def to_s
